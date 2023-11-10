@@ -10,7 +10,7 @@ public class GitCalculator {
 		
 		System.out.println("Welcome to git calculator");
 		System.out.println("Input the desired operation");
-		System.out.println("Addition(A)/Subtraction(S)/Multiplication(M)/Division(D)");
+		System.out.println("Addition(A) / Subtraction(S) / Multiplication(M) / Division(D)");
 		String operation = scan.next();
 		System.out.println("Input first integer");
 		int number1 = scan.nextInt();
@@ -19,9 +19,10 @@ public class GitCalculator {
 		
 		if (operation.equalsIgnoreCase("A")) {
 			
-		}
+		}s
 		else if (operation.equalsIgnoreCase("S")) {
-			
+			double result = number1 - number2;
+			System.out.println(result);
 		}
 		else if (operation.equalsIgnoreCase("M")) {
 			
@@ -32,6 +33,7 @@ public class GitCalculator {
 		else {
 			System.out.println("Unrecognized");
 		}
+
 		}
 
 }
