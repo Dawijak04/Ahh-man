@@ -10,7 +10,7 @@ public class GitCalculator {
 		
 		System.out.println("Welcome to git calculator");
 		System.out.println("Input the desired operation");
-		System.out.println("Addition(A)/Subtraction(S)/Multiplication(M)/Division(D)");
+		System.out.println("Addition(A)/Subtraction(S)/Multiplication(M)/Division(D)/Indices(I)");
 		String operation = scan.next();
 		System.out.println("Input first integer");
 		int number1 = scan.nextInt();
@@ -29,7 +29,17 @@ public class GitCalculator {
 		else if (operation.equalsIgnoreCase("D")) {
 			
 		}
-		else {
+		else if (operation.equalsIgnoreCase("I")){
+			System.out.println("Enter Indice");
+			int power = scan.nextInt();
+			System.out.println("1 or 2?");
+			int num = scan.nextInt();
+			if(num == 1){
+				System.out.println(Math.pow(number1, power));
+			}else{
+				System.out.println(Math.pow(number2, power));
+			}
+		}else {
 			System.out.println("Unrecognized");
 		}
 		}
