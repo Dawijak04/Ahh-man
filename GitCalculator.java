@@ -35,5 +35,12 @@ public class GitCalculator {
 		}
 
 		}
-
+	public static void bondMultiplication(int n1, int n2) {
+		int result = n1*n2;
+		System.out.println("Answer: " + result);
+	}
+	public static void bondDivision (int n1, int n2) {
+		int result = n1/n2;
+		System.out.println("Answer: " + result);
+	}
 }
